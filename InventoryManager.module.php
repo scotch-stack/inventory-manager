@@ -41,7 +41,7 @@ final class InventoryManager extends CMSMSExt
 
     public function GetAuthor()
     {
-        return 'John Scotcher with ChatGPTCodex5.3 and Claude Code';
+        return 'John Scotcher with ChatGPT Codex 5.3 and Claude Code';
     }
 
     public function GetAuthorEmail()
