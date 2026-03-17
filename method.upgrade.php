@@ -9,6 +9,12 @@ switch ($oldversion) {
         $sqlarray = $dict->AddColumnSQL($products_table, 'base_cost N(10.2) NOTNULL DEFAULT 0.00');
         $dict->ExecuteSQLArray($sqlarray);
         // fall through
+    case '0.2':
+        // No schema changes — edit/delete/duplicate actions only
+        // fall through
+    case '0.3':
+        // No schema changes — persistent filter, duplicate-to-edit
+        // fall through
     default:
         break;
 }

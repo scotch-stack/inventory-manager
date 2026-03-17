@@ -31,7 +31,7 @@ final class InventoryManager extends CMSMSExt
 
     public function GetVersion()
     {
-        return '0.2';
+        return '0.3.1';
     }
 
     public function GetHelp()
