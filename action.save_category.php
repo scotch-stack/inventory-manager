@@ -6,6 +6,11 @@ if (!$this->CheckPermission('Manage Inventory Manager')) {
     return;
 }
 
+if (isset($params['cancel'])) {
+    $this->Redirect($id, 'defaultadmin', $returnid, ['active_tab' => 'categories']);
+    return;
+}
+
 if (!xt_utils::valid_form_csrf()) {
     $this->Redirect($id, 'add_category', '', ['error_key' => 'error_csrf']);
     return;

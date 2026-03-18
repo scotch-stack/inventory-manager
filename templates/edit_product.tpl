@@ -35,8 +35,8 @@
 <div class="pageoverflow">
   <p class="pagetext">&nbsp;</p>
   <p class="pageinput">
-    <input type="submit" value="{$submit_text|escape}">
-    &nbsp;{$cancel_link}
+    <input type="submit" name="{$actionid}submit" value="{$submit_text|escape}">
+    &nbsp;<input type="submit" name="{$actionid}cancel" value="{$cancel_text|escape}">
   </p>
 </div>
 {$form_end}

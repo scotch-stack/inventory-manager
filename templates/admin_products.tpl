@@ -48,7 +48,7 @@ $(document).ready(function(){
   <tbody>
     {foreach from=$products item=product}
       <tr class="{cycle values='row1,row2'}">
-        <td>{$product.name|escape}</td>
+        <td>{$product.name_link}</td>
         <td>{$product.alias|escape}</td>
         <td>{$product.sku|escape}</td>
         <td>{$product.base_cost|string_format:"%.2f"|escape}</td>

@@ -18,6 +18,6 @@ $smarty->assign('label_category_name', $this->Lang('label_category_name'));
 $smarty->assign('label_category_alias', $this->Lang('label_category_alias'));
 $smarty->assign('label_category_description', $this->Lang('label_category_description'));
 $smarty->assign('submit_text', $this->Lang('submit'));
-$smarty->assign('cancel_link', $this->CreateLink($id, 'defaultadmin', $returnid, $this->Lang('cancel'), ['active_tab' => 'categories']));
+$smarty->assign('cancel_text', $this->Lang('cancel'));
 
 echo $this->ProcessTemplate('add_category.tpl');

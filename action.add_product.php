@@ -29,7 +29,7 @@ $smarty->assign('label_product_description', $this->Lang('label_product_descript
 $smarty->assign('label_product_base_cost', $this->Lang('label_product_base_cost'));
 $smarty->assign('label_product_categories', $this->Lang('label_product_categories'));
 $smarty->assign('submit_text', $this->Lang('submit'));
-$smarty->assign('cancel_link', $this->CreateLink($id, 'defaultadmin', $returnid, $this->Lang('cancel'), ['active_tab' => 'products']));
+$smarty->assign('cancel_text', $this->Lang('cancel'));
 $smarty->assign('text_no_categories', $this->Lang('text_no_categories'));
 $smarty->assign('categories', $categories);
 

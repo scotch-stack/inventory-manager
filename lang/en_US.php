@@ -4,7 +4,7 @@ if (!defined('CMS_VERSION')) exit;
 $lang['friendlyname'] = 'Inventory Manager';
 $lang['moddescription'] = 'Manage products and categories for inventory.';
 $lang['help'] = 'Use Categories to define product groupings, then add Products and assign one or more categories.';
-$lang['changelog'] = '0.3 - Edit/delete/duplicate products, category filter.' . "\n" . '0.2 - Separate add forms, base cost field.' . "\n" . '0.1 - Initial module with product and category creation.';
+$lang['changelog'] = '0.3.2 - Category edit/delete.' . "\n" . '0.3.1 - Persistent filter, duplicate-to-edit.' . "\n" . '0.3 - Edit/delete/duplicate products, category filter.' . "\n" . '0.2 - Separate add forms, base cost field.' . "\n" . '0.1 - Initial module.';
 
 $lang['products_tab'] = 'Products';
 $lang['categories_tab'] = 'Categories';
@@ -21,6 +21,8 @@ $lang['lnk_add_category'] = 'Add Category';
 $lang['lnk_edit_product'] = 'Edit';
 $lang['lnk_delete_product'] = 'Delete';
 $lang['lnk_duplicate_product'] = 'Duplicate';
+$lang['lnk_edit_category'] = 'Edit';
+$lang['lnk_delete_category'] = 'Delete';
 
 $lang['label_product_name'] = 'Name';
 $lang['label_product_alias'] = 'Alias';
@@ -34,6 +36,7 @@ $lang['label_category_alias'] = 'Alias';
 $lang['label_category_description'] = 'Description';
 
 $lang['title_edit_product'] = 'Edit Product';
+$lang['title_edit_category'] = 'Edit Category';
 $lang['label_filter_category'] = 'Filter by Category';
 $lang['lnk_filter'] = 'Filter';
 $lang['lnk_reset_filter'] = 'Show All';
@@ -62,6 +65,7 @@ $lang['error_product_sku_required'] = 'Product SKU is required.';
 $lang['error_product_sku_exists'] = 'That SKU already exists.';
 $lang['error_save_failed'] = 'Unable to save. Please try again.';
 $lang['areyousure_delete_product'] = 'Are you sure you want to delete this product? This cannot be undone.';
+$lang['areyousure_delete_category'] = 'Are you sure you want to delete this category? Any products assigned to it will lose this category assignment. This cannot be undone.';
 
 $lang['audit_installed'] = 'InventoryManager module installed.';
 $lang['audit_uninstalled'] = 'InventoryManager module uninstalled.';
@@ -70,6 +74,8 @@ $lang['audit_product_updated'] = 'Product updated: %s';
 $lang['audit_product_deleted'] = 'Product deleted: %s';
 $lang['audit_product_duplicated'] = 'Product duplicated from: %s';
 $lang['audit_category_created'] = 'Category created: %s';
+$lang['audit_category_updated'] = 'Category updated: %s';
+$lang['audit_category_deleted'] = 'Category deleted: %s';
 
 $lang['param_product_id'] = 'Product ID';
 $lang['param_category_id'] = 'Category ID';

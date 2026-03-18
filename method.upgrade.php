@@ -15,6 +15,9 @@ switch ($oldversion) {
     case '0.3':
         // No schema changes — persistent filter, duplicate-to-edit
         // fall through
+    case '0.3.1':
+        // No schema changes — category edit/delete
+        // fall through
     default:
         break;
 }

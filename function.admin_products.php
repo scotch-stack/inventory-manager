@@ -54,6 +54,8 @@ $admintheme = cms_utils::get_theme_object();
 foreach ($products as &$product) {
     $pid = (int) $product['product_id'];
 
+    $product['name_link'] = $this->CreateLink($id, 'edit_product', $returnid, $product['name'], ['product_id' => $pid]);
+
     $edit_icon = $admintheme->DisplayImage('icons/system/edit.gif', $this->Lang('lnk_edit_product'), '', '', 'systemicon');
     $product['edit_link'] = $this->CreateLink($id, 'edit_product', $returnid, $edit_icon, ['product_id' => $pid]);
 
